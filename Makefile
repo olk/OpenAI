@@ -17,6 +17,9 @@ test-api:
 app:
 	$(PYTHON_INTERPRETER) src/app.py
 
+max-tokens:
+	$(PYTHON_INTERPRETER) src/max_tokens.py
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
