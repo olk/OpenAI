@@ -32,6 +32,9 @@ generated-knowledge-prompt:
 context-stuffing:
 	$(PYTHON_INTERPRETER) src/context_stuffing.py
 
+dyn-max-tokens:
+	$(PYTHON_INTERPRETER) src/dyn_max_tokens.py 3
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
