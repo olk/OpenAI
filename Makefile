@@ -29,6 +29,9 @@ temperature:
 generated-knowledge-prompt:
 	$(PYTHON_INTERPRETER) src/generated_knowledge_prompting.py
 
+context-stuffing:
+	$(PYTHON_INTERPRETER) src/context_stuffing.py
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
