@@ -23,6 +23,12 @@ max-tokens:
 stop-tokens:
 	$(PYTHON_INTERPRETER) src/stop_tokens.py
 
+temperature:
+	$(PYTHON_INTERPRETER) src/temperature.py
+
+generated-knowledge-prompt:
+	$(PYTHON_INTERPRETER) src/generated_knowledge_prompting.py
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
