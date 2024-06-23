@@ -38,6 +38,12 @@ dyn-max-tokens:
 embedding:
 	$(PYTHON_INTERPRETER) src/embedding.py 3
 
+zero-shot-classifier:
+	$(PYTHON_INTERPRETER) src/zero_shot_classifier.py
+
+zero-shot-class-acc:
+	$(PYTHON_INTERPRETER) src/zero_shot_class_acc.py
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
