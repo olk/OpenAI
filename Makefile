@@ -50,6 +50,9 @@ speach2text:
 speach2de:
 	$(PYTHON_INTERPRETER) src/whisper/speach2de.py
 
+text2speach:
+	$(PYTHON_INTERPRETER) src/tts_all.py
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
