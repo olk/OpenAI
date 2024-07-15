@@ -44,6 +44,12 @@ zero-shot-classifier:
 zero-shot-class-acc:
 	$(PYTHON_INTERPRETER) src/zero_shot_class_acc.py
 
+speach2text:
+	$(PYTHON_INTERPRETER) src/whisper/speach2text.py
+
+speach2de:
+	$(PYTHON_INTERPRETER) src/whisper/speach2de.py
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
